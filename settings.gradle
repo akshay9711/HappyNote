@@ -1,0 +1,3 @@
+include ':experimentLab'
+include ':app'
+rootProject.name = "HappyNote"

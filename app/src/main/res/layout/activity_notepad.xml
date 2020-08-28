@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#253237"
+    android:padding="10dp"
+    tools:context=".notepad">
+
+    <EditText
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#787878"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:gravity="top"
+        android:hint="Note title"
+        android:maxLength="40"
+        android:textColor="#E0FBFC"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#555555"
+        android:textColorLink="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#303030"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="top"
+        android:hint="Type note..."
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:shadowColor="#6A000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="7"
+        android:textColor="#9EE0FBFC"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#6A6A6A"
+        android:textColorLink="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
